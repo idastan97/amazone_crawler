@@ -22,7 +22,6 @@ async function get_page(url){
 }
 
 async function search(key_word){
-    console.log("ser");
     let encoded_key_word = encodeURI(key_word);
     let url = `https://www.amazon.com/s?k=${encoded_key_word}&ref=nb_sb_noss`;
     return get_page(url);
